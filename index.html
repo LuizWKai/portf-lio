@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Luiz Kai</title>
+  </head>
+  <body id="corpo">
+    <header class="header">
+      <section class="navbarcaixa">
+        <a href="#" class="logo">
+          <img src="./image/logoPort.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#skills">Skills</a>
+          <a href="#contatos">Contato</a>
+        </nav>
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input
+              type="checkbox"
+              onclick="claroescuro()"
+              class="checkbox active"
+              id="mudarfundo"
+            />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+    </header>
+    <div class="inicioConteiner">
+      <section class="inicio" id="#inicio">
+        <div class="intro">
+          <h1>Olá, me chamo <span>Luiz Kai</span></h1>
+          <p>
+            Transformo ideias em soluções digitais completas - do back-end
+            robusto ao front-end intuitivo.
+          </p>
+          <a
+            href="Curriculo/Currículo - Luiz Kai.pdf"
+            download="Currículo -Luiz_Kai.pdf"
+            class="cv"
+            >Currículo</a
+          >
+        </div>
+        <div class="pixelArt">
+          <img src="./image/PixelArt_Sem_Fundo.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <section class="sobre" id="sobre">
+      <h2 class="title">Sobre <span>Mim</span></h2>
+      <br />
+      <div class="row">
+        <div class="content">
+          <p>
+            Olá! Me chamo
+            <span
+              >Luiz Kai, tenho 21 anos e sou estudante de Ciência da
+              Computação</span
+            >. Estou iniciando minha jornada como
+            <span>desenvolvedor full-stack</span>, sempre motivado por desafios
+            e pela oportunidade de criar soluções úteis, funcionais e bem
+            estruturadas.
+          </p>
+          <br />
+          <p>
+            Tenho grande interesse por áreas como
+            <span>machine learning e análise de dados</span>, e busco
+            constantemente aprender novas tecnologias que ampliem minha
+            capacidade de entender e resolver problemas reais com eficiência e
+            inteligência.
+          </p>
+          <br />
+          <p>
+            Este portfólio reúne alguns dos meus projetos, experiências e
+            aprendizados ao longo da minha formação. Sinta-se à vontade para
+            explorar!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="meus_projetos" id="projetos">
+      <h2 class="title">Projetos</h2>
+      <br />
+      <div class="box">
+        <div class="box-coisa">
+          <img src="./image/Loja de produtos.png" alt="" />
+          <button class="lojaprodutos" id="lojaprodutos" onclick="mostrarTextoLoja()">Detalhes</button>
+        </div>
+        <div class="box-coisa">
+          <img src="./image/Site Valorant.png" alt="" />
+          <button class="sitevalorat" id="sitevalorat" onclick="mostrarTextoSitePersona()">Detalhes</button>
+        </div>
+        <div class="box-coisa">
+          <img src="./image/portfo.png" alt="" />
+          <button class="lojaprodutos" id="lojaprodutos" onclick="mostrarTextoPortfo()">Detalhes</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="caixaskills">
+        <div class="hardskills">
+          <h3 class="titleskills"><span>Hard </span>Skills</h3>
+          <br />
+          <div class="iconimg">
+            <div class="nameskills">
+              <img src="./image/icons8-html-48.png" alt="" />
+              <h4>HTML</h4>
+            </div>
+            <div class="nameskills">
+              <img src="./image/icons8-css-48.png" alt="" />
+              <h4>CSS</h4>
+            </div>
+            <div class="nameskills">
+              <img src="./image/icons8-js-48.png" alt="" />
+              <h4>JavaScript</h4>
+            </div>
+            <div class="nameskills">
+              <img src="./image/icons8-python-48.png" alt="" />
+              <h4>Python</h4>
+            </div>
+            <div class="nameskills">
+              <img src="./image/icons8-nó-js-48.png" alt="" />
+              <h4>Node.js</h4>
+            </div>
+            <div class="nameskills">
+              <img src="./image/icons8-react-48.png" alt="" />
+              <h4>React</h4>
+            </div>
+          </div>
+        </div>
+        <div class="softskills">
+          <h3 class="titleskills"><span>Soft</span> Skills</h3>
+          <br />
+          <div class="tagsskills">
+            <div class="nameskills"><h4>Aprendizado rápido</h4></div>
+            <div class="nameskills"><h4>Pensamento lógico</h4></div>
+            <div class="nameskills"><h4>Boa comunicação</h4></div>
+            <div class="nameskills"><h4>Adaptabilidade</h4></div>
+            <div class="nameskills"><h4>Raciocínio analítico</h4></div>
+            <div class="nameskills"><h4>Trabalho em equipe</h4></div>
+            <div class="nameskills"><h4>Proatividade</h4></div>
+            <div class="nameskills"><h4>Criatividade e inovação</h4></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contatos" id="contatos">
+      <div class="caixacontato">
+      <div class="enviaremail">
+        <form name="contato" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contato" />
+          <p hidden>
+            <label>Não preencha este campo: <input name="bot-field" /></label>
+          </p>
+          <div class="nome">
+            <label for="nome"><h4>Seu nome: </h4></label>
+            <input type="text" name="nome" required />
+          </div>
+          <br>
+          <div class="email">
+            <label> <h4>Seu e-mail:</h4></label>
+            <input type="email" name="email" required
+            />
+          </div>
+          <br>
+          <div class="mensagem">
+            <label><h4>Mensagem:</h4></label> 
+              <textarea name="mensagem" required></textarea>
+          </div>
+          <br>
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+      <div class="tagscontatos">
+        <div class="social github">
+          <a href="https://github.com/LuizWKai"
+            ><img src="./contatoimg/icons8-github-50.png" alt=""
+          /></a>
+        </div>
+        <div class="social linkedin">
+          <a href="https://www.linkedin.com/in/luiz-kai-037b74352/"
+            ><img src="./contatoimg/icons8-linkedin-50.png" alt=""
+          /></a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="box-detalhes" id="box-detalhesLoja">
+          <button class="fecharAba" id="fecharAba" onclick="fecharAbaLoja()">x</button>
+          <div class="caixaDisplay">
+            <div class="conteudoDetalhes">
+            <img src="./gif/2025-08-03 21-58-51.mp4.gif" alt="" />
+          </div>
+          <div class="conteudoDosProjetos">
+              <h3>Loja de produtos</h3>
+              <br>
+              <p>Um site completo para cadastro, listagem, atualização e remoção de produtos, 
+                utilizando.</p>
+                <br>
+              <p>📌Funcionalidades</p>
+              <br>
+              <p>✅ Listar produtos cadastrados</p>
+              <br>
+              <p>✅ Adicionar novo produto</p>
+              <br>
+              <p>✅ Editar produto existente</p>
+              <br>
+              <p>✅ Remover produto</p>
+              <br>
+              <p>✅ Interface responsiva com Chakra UI</p>
+              <br>
+              <p>🧠Tecnologias</p>
+              <br>
+              <p>• Frontend: React, Vite, Chakra UI, Zustand, React Router DOM</p>
+              <br>
+              <p>• Backend: Node.js, Express, Mongoose, MongoDB</p>
+              <br>
+              <p>• Dev Tools: Nodemon, dotenv, concurrently</p>
+            </div>
+            </div>
+        </div>
+      <div class="box-detalhes" id="box-detalhesSitePersona">
+          <button class="fecharAba" id="fecharAba" onclick="fecharAbaPersona()">x</button>
+          <div class="caixaDisplay">
+            <div class="conteudoDetalhes">
+            <img src="./gif/video_site_valorant.mp4.gif" alt="" />
+          </div>
+          <div class="conteudoDosProjetos">
+            <h3>Site de personagens do Valorant</h3>
+            <br>
+            <p>🎯 Projeto: Valorant — Galeria de Agentes do Valorant Este é um site desenvolvido com <span>HTML, CSS e JavaScript</span>, 
+              com o objetivo de apresentar os agentes do jogo Valorant de forma interativa e responsiva. Cada agente possui sua própria imagem, descrição e categoria.</p>
+              <br>
+              <p>📌 Funcionalidades</p>
+              <br>
+              <p>✅ Lista interativa com agentes de Valorant</p>
+              <br>
+              <p>✅ Setas de navegação para trocar os agentes</p>
+              <br>
+              <p>✅ Indicador de progresso (estilo carrossel)</p>
+              <br>
+              <p>✅ Design responsivo e moderno</p>
+              <br>
+              <p>✅ Campo de busca no cabeçalho (em desenvolvimento)</p>
+              <br>
+              <p>
+                ✅ Mecanismo de busca dentro do site
+              </p>
+          </div>
+          </div>
+        </div>
+        <div class="box-detalhes" id="box-detalhesPortfolio">
+          <button class="fecharAba" id="fecharAbaPersona" onclick="fecharAbaPortfo()">x</button>
+          <div class="caixaDisplay">
+            <div class="conteudoDetalhes">
+              <img src="./image/portfo.png" alt="" />
+            </div>
+            <div class="conteudoDosProjetos">
+                <div class="conteudoDosProjetos">
+                  <h3>Portfólio Pessoal — Luiz Kai</h3>
+                  <br>
+                  <p>Este é um projeto de portfólio pessoal, 
+                    com o objetivo de apresentar suas principais competências técnicas (hard skills), 
+                    habilidades interpessoais (soft skills), projetos desenvolvidos e canais de contato 
+                    profissional.
+                  </p>
+                    <br>
+                  <p>📌 Funcionalidades</p>
+                  <br>
+                  <p>✅ Navegação entre seções do site: Sobre Mim, Projetos, Skills e Contato</p>
+                  <br>
+                  <p>✅ Alternância de modo claro/escuro via botão de toggle</p>
+                  <br>
+                  <p>✅ Download de currículo em PDF</p>
+                  <br>
+                  <p>✅ Galeria de projetos com botão “Detalhes” exibindo informações detalhadas</p>
+                  <br>
+                  <p>✅ Formulário de contato funcional com integração ao **Netlify Forms**</p>
+                  <br>
+                  <p>✅ Links diretos para GitHub e LinkedIn</p>
+                </div>
+            </div>
+          </div>
+        </div>
+  </body>
+  <script src="main.js"></script>
+</html>

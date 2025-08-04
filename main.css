@@ -1,0 +1,700 @@
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.switch-label {
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+    --fundo: #1a1919;
+    --letras: rgb(165, 204, 236);
+    --borda: 0.1rem solid rgb(83, 126, 146);
+    --segCor: #1f1f20;
+    --branco:  #fff;
+    font-size: 14px;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: 'Lato';
+}
+
+body{
+    background-color: var(--fundo);
+}
+
+.white-mode {
+  background-color: rgb(230, 236, 253);
+    .inicioConteiner p{
+      color: #1a1919;
+    }
+    .inicioConteiner h1{
+      color: rgb(25, 25, 116);
+    }
+    .inicioConteiner a{
+    color: rgb(25, 25, 116);
+    background-color: #F5F5DC;
+    }
+    .header {
+      background-color: #F5F5DC;
+    }
+    .navbarcaixa a{
+        color: rgb(25, 25, 116)
+      }
+    .content p{
+      color: black;
+    }
+    .sobre span {
+      color: #1a1919;
+    }
+    .title{
+      color: rgba(25, 25, 116)
+    }
+    .box .box-coisa button{
+      color: #1a1919;
+      background-color: #F5F5DC;
+    }
+    .box .box-coisa button:hover{
+      color: white;
+    }
+    .titleskills{
+      color:rgb(25, 25, 116);
+    }
+    .titleskills span{
+      color: #1a1919;
+    }
+    .caixaskills .nameskills {
+      background-color: #F5F5DC;
+    }
+    .caixaskills .nameskills h4{
+      color: rgb(25, 25, 116)
+    }
+    .tagscontatos .email:hover{
+      background-color: #1a1919;
+    }
+    .enviaremail h4{
+      color: #1a1919;
+    }
+    .enviaremail input{
+      background-color: #F5F5DC;
+    }
+    .enviaremail textarea{
+      background-color: #F5F5DC;
+    }
+    .tagscontatos .github:hover{
+      background-color: #1a1919;
+    }
+
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1700px;
+
+}
+
+.header img {
+    width: 90px;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: var(--borda);
+    background-color: var(--segCor);
+    border-radius: 100px;
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.0rem;
+    padding-bottom: 10px;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--letras);
+}
+.navbar a:hover {
+    color: rgb(83, 126, 146);
+    border-bottom: 0.1rem solid rgb(83, 126, 146);
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.inicio {
+    margin-top: 100px;
+}
+.inicioConteiner {
+    height: 100vh;
+    background-position: center;
+    background: cover;
+}
+
+.inicioConteiner section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 200px;
+}
+
+.inicioConteiner img {
+    width: 700px;
+    
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    width: 600px;
+    height: 200px;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.intro h1 {
+    color: aliceblue;
+    font-size: 30px;
+    color: var(--letras);
+    font-weight: bold;
+}
+
+.intro p{
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    line-height: 1.8;
+    font-family: "Bree serif", sans-serif;
+}
+
+.intro a {
+    display: flexbox;
+    color: var(--letras);
+    background-color: var(--segCor);
+    padding: 10px;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--letras);
+    text-align: center;
+    padding: auto;
+}
+.sobre {
+    scroll-margin-top: 118px;
+    margin-bottom: 200px;
+
+}
+
+.sobre img {
+    width: 450px;
+    border-radius: 5px;
+}
+.title span {
+    color: aliceblue;
+    padding: 3px;
+}
+
+.sobre .row {
+    display: flexbox;
+    align-items: center;
+    margin: auto;
+
+    border: 0.1rem solid var(--segCor);
+    border-radius: 10px;
+    width: 600px;
+}
+.sobre .row .content {
+    padding: 3rem;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    line-height: 1.8;
+    font-family: 'Arial ' ;
+    font-style: normal;
+}
+.sobre span{
+  font-family: 'Bree serif';
+  font-style: italic;
+}
+.sobre .title span{
+  font-style: normal;
+}
+
+.meus_projetos .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
+    gap: 1rem;
+}
+.box{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.meus_projetos{
+    scroll-margin-top: 118px;
+    margin-bottom: 200px;
+}
+
+.meus_projetos img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.box-coisa {
+    text-align: center;
+    padding: 1rem;
+}
+
+.meus_projetos .box .box-coisa:hover>*{
+    background-color: rgb(44, 44, 78);
+    font-size: 1.2rem;
+}
+
+.meus_projetos .box button {
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 15px;
+    background: transparent;
+    border: var(--borda);
+    color: var(--letras);
+    cursor: pointer;
+}
+
+.skills{
+    scroll-margin-top: 118px;
+    margin-bottom: 200px;
+}
+.caixaskills{
+    display: flex;
+    gap: 500px;
+}
+.titleskills{
+    font-size: 2rem;
+    color: var(--letras);
+    padding: auto;
+}
+.titleskills span{
+    color: white;
+}
+
+.hardskills h4{
+    color: var(--letras);
+    padding: auto;
+}  
+.hardskills img {
+    border: var(--borda);
+    border-radius: 5px;
+    padding: 10px;
+}
+.skills .caixaskills .iconimg {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.skills .softskills h4{
+    color: var(--letras);
+    padding: auto;
+}
+.skills .softskills .tagsskills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nameskills {
+    background-color: var(--segCor);
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.nameskills:hover{
+    font-size: 16px;
+    transition: 0.2s linear;
+}
+.contato{
+  margin-bottom: 200px;
+}
+.tagscontatos{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  gap: 50px;
+}
+.tagscontatos .github{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.tagscontatos .github:hover{
+  padding: 10px;
+  background: white;
+  transition-duration: .3s;
+}
+.tagscontatos a{
+  display: inline-block;
+}
+.tagscontatos .linkedin{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.tagscontatos .linkedin:hover{
+  padding: 10px;
+  background: rgb(9, 55, 116);
+  transition-duration: .3s;
+}
+.enviaremail {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+.enviaremail input{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.enviaremail  h4{
+    font-size: 1.2rem;
+    color: var(--letras);
+    padding: auto;
+}
+.enviaremail textarea{
+  width: 300px;
+  height: 140px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.enviaremail button{
+  padding: 5px;
+  border-radius: 5px;
+}
+.enviaremail button:hover{
+  background-color: var(--letras);
+}
+.contatos{
+  margin-bottom: 200px;
+  scroll-margin-top: 118px;
+}
+.caixacontato{
+  margin: auto;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 10px black;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.desfocado {
+  filter: blur(4px);
+}
+.caixaDisplay {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  font-size: 20px;
+}
+.caixaDisplay h3{
+  color: var(--letras);
+}
+.caixaDisplay span{
+  color: var(--letras)
+}
+.conteudoDetalhes img{
+  width: 50vw;
+  height: auto;
+}
+.conteudoDosProjetos {
+  text-align: left;
+}
+.box-detalhes{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.box-detalhes img{
+  border-radius: 12px;
+}
+.fecharAba{
+  z-index: 99;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.conteudoDosProjetos{
+  width: 400px;
+}
